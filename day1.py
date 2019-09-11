@@ -6,6 +6,6 @@ while x<=y:
     if x%2==0:
         print("even",x)
         sum=sum+x
-         print("even sum",sum)
+        print("even sum",sum)
     
-    x=x+1
+x=x+1
