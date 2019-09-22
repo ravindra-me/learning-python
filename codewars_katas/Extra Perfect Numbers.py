@@ -1,11 +1,3 @@
-n=28
-def extra_perfect(n):
-    l=[]
-    for i in range(1,n+1):
-        if i%2==0:
-            pass
-        else:
-            l.append(i)
-    
-    return l
-print(extra_perfect(n))
+numbers=[2,9,13,10,5,2,9,5]
+#def max_tri_sum(numbers):
+print(sum(sorted(set(numbers))[-3:]))
