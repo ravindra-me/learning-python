@@ -1,4 +1,9 @@
-arr=[0, 1, 2, 3, 5, 8, 13]
-def take(arr,n):
-    return(arr[0:n])
-print(take(arr,3))
+chars=['a','b','c','d','f']
+def find_missing_letter(chars):
+    for i in chars:
+        if chr(ord(i)+1) in chars:
+            pass
+        else:
+            return str(chr(ord(i)+1))
+    
+print(find_missing_letter(chars))
