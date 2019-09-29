@@ -1,7 +1,9 @@
-for row in range (7):
-    for cal in range (5):
-        if (row==0 or row==6)or(cal==0):
-            print("*",end="")
-        else:
-            print(end=" ")
+num=int(input("enter the row value"))
+for i in range (1,num+1):
+    for j in range (1,num-i+1):
+        print(" ",end=" ")
+    for j in range(i,0,-1):
+        print(j,end=" ")
+    for j in range(2,i+1):
+        print(j,end=" ")
     print()
