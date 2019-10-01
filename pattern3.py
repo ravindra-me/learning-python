@@ -23,5 +23,4 @@ for i in range(num):
     for j in range(num):
         print(n_list[i][j],end="\t")
     print()
-        
   
