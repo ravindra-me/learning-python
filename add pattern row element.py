@@ -1,8 +1,9 @@
-def row_sum_odd_numbers(n):
-    return n**3
-print(row_sum_odd_numbers(n))
- #            1
-  #        3     5
-   #    7     9    11
-#   13    15    17    19
-#21    23    25    27    29
+def solution(number):
+    sum=0
+    for i in range(1,number):
+        if i%3==0 or i%5==0:
+            sum=sum+i
+    return sum
+
+        
+print(solution(10))
