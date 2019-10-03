@@ -1,12 +1,11 @@
-'''
-Write simple .camelCase method (camel_case function in PHP, CamelCase in C# or camelCase in Java) for strings. 
-All words must have their first letter capitalized without spaces.
-'''
-string = 'test case'
+def gap(m,n):
+    a=[]
+    for i in range(m,n+1):
+        for j in range(2,i):
+            if i%j==0:
+                break
+        else:
+            a.append(i)
+    return(a)
 
-
-def camel_case(string):
-    return ''.join(i.title() for i in string.split(' '))
-
-print(camel_case(string))
-
+print(gap(100,110))
