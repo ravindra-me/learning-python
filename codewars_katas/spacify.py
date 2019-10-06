@@ -1,25 +1,12 @@
-def printDiagonalSums(mat, n): 
-  
-    principal = 0
-    secondary = 0; 
-    for i in range(0, n):  
-        for j in range(0, n):  
-  
-             
-            if (i == j): 
-                principal += mat[i][j] 
-  
-            
-            if ((i + j) == (n - 1)): 
-                secondary += mat[i][j] 
-          
-    print("Principal Diagonal:", principal) 
-    print("Secondary Diagonal:", secondary) 
-  
-
-a = [[ 1, 2, 3, 4 ], 
-     [ 5, 6, 7, 8 ],  
-     [ 1, 2, 3, 4 ], 
-      [ 5, 6, 7, 8 ]] 
-printDiagonalSums(a, 4) 
-
+class text:
+    def f1(self):
+        self.name=input(" enter the name ")
+        self.age=int(input("enter the age"))
+        self.sex=input("enter the sex")
+    def f2(self):
+        print("name",  self.name)
+        print("age",   self.name)
+        print("sex",   self.sex)
+s1=text()
+s1.f1()
+s1.f2()
