@@ -1,14 +1,10 @@
-def gap(g, m, n):
-    preprime = 2
-    for i in range(m, n+1):
-        is_prime = True
-        for j in range(2,int(n ** 0.5)+1):
-            if i % j == 0:
-                is_prime = False
-                break
-        if is_prime:
-            if i - preprime == g:
-                return [preprime, i]
-            else:
-                preprime = i
-print(gap(2,100,110))
+arr='[2,4,6,4,10]'
+def odd_one(arr):
+    import ast
+    a=ast.literal_eval(arr) 
+    for i in a:
+        if i%2==0:
+            pass
+        else:
+            return a.index(i)
+print(odd_one(arr))
