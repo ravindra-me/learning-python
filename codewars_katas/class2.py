@@ -1,24 +1,27 @@
-class person :
-    def __init__(self,name,age):
-        self.name=name
-        self.age=age
-      
-    def showname(self):
-        print("name=",self.name)
-    def showage(self):
-        print("age=",self.age)
-class student(person):
-    def __init__(self,rollno,schoolname):
-        self.rollno=rollno
-        self.schoolname=schoolname
-        person.__init__(self,"ravindra",18)
-    def showrollno(self):
-        print("rollno=",self.rollno)
-    def showschoolname(self):
-        print("schoolname=",self.schoolname)
+from selenium import webdriver 
+from time import sleep 
 
-s1=student("sbm inter college",24)
-s1.showrollno()
-s1.showschoolname()
-s1.showname()
-s1.showage()
+usr=input('Enter Email Id:') 
+pwd=input('Enter Password:') 
+
+driver = webdriver.Chrome() 
+driver.get('https://www.facebook.com/') 
+print ("Opened facebook") 
+sleep(1) 
+
+username_box = driver.find_element_by_id('email') 
+username_box.send_keys(usr) 
+print ("Email Id entered") 
+sleep(1) 
+
+password_box = driver.find_element_by_id('pass') 
+password_box.send_keys(pwd) 
+print ("Password entered") 
+
+login_box = driver.find_element_by_id('loginbutton') 
+login_box.click() 
+
+print ("Done") 
+input('Press anything to quit') 
+driver.quit() 
+print("Finished") 
