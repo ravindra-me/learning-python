@@ -33,6 +33,4 @@ while choice!=0:
         print("Exiting!")
     else:
         print("Invalid choice!!")
- 
- 
 print()

@@ -1,6 +1,6 @@
 class text:
     def f1(self):
-        self.name=input(" enter the name ")
+        self.name=input("enter the name")
         self.age=int(input("enter the age"))
         self.sex=input("enter the sex")
     def f2(self):

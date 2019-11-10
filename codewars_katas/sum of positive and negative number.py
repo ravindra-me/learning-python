@@ -5,7 +5,7 @@ def count_positives_sum_negatives(arr):
     c=[]
     for i in arr:
         if i>=0:
-            l.append(i)
+            
         elif i<=0:
             a.append(i)
     return (c.append(sum(l),c.append(sum(a)))
