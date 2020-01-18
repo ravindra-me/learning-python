@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>shopping list</h1>
+    <input id="userinput" type="text" placeholder="enter item">
+    <button  id="enter">click</button>
+    <ul id="ul">
+        <li >hdsjh</li>
+        <li>jdhsjk</li>
+        <li>jadshj</li>
+        <li>hekiii</li>
+    </ul>
+    <script>
+        var button=document.getElementById("enter");
+        var input= document.getElementById("userinput");
+        var ul= document.getElementById("ul");
+        function inputlength(){
+            return input.value.length;
+        }
+        function creatListElement(){
+            var li=document.createElement("li");
+            li.appendChild(document.createTextNode(input.value));
+            ul.appendChild(li);
+            input.value="";
+
+        }
+        button.addListAfterClick(){
+            if(inputlength() >0) {
+                creatListElement();
+            }    
+        }
+        button.addListAfterKeyPress(event){
+            if(inputlength()>0 && event.KeyCode==13){
+                creatListElement();
+            }
+        }
+        button.addEventListener("click",addListAfterClick);
+        button.addEventListener("keypress", addListAfterKeyPress);       
+    </script>
+    
+</body>
+</html>

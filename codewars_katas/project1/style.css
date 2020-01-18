@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#main-nav a{
+    background-color: #254441;
+    text-decoration: none;
+    display: block;
+    height: 64px;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.4s;
+
+    
+}
+#main-nav ul{
+    list-style: none;
+    display: flex;
+}
+#main-nav li{
+    width:100%;
+    text-align: center;
+    position: relative;
+}
+#main-nav li:hover .submanu > li{
+    display: block;
+    top:0px;
+}
+.submanu li{
+    display: none;
+    position: absolute;
+    top:0px;
+
+}
+.submanu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+}
+.submanu-2 li{
+    position: relative;
+}
+.submanu li:hover .submanu-2 li{
+    display: block;
+}
+.submanu-2 li{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    width: 120px;
+}
+.submanu-2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+

@@ -1,0 +1,69 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.body{
+    font-family: "leto";
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+    padding: 20px;
+}
+    
+.warpper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width;100vh;
+    height: 100vh;
+    background-color: aqua;
+}
+.calculator{
+    display: grid;
+    grid-template-rows: 8% 25% auto;
+    width:300px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
+}
+.header{
+    background-color:#e6e6e6;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    background-color: #e6e6e6;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-content: space-around;
+    padding: 10px;
+}
+.footer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.footer div.symbol{
+    background-color: rgb(218, 98, 19);
+    color: #fff;
+}
+.footer div.symbol-dark{
+    background-color: rgb(241, 104, 24);
+    color:#fff;
+}
+
+.footer div :hover{
+    cursor: pointer;
+
+}
